@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <<meta charset="utf-8">
+    <!--fontes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">    <!--Fim fontes-->
+    <title>Pesquisa</title>
+  </head>
+  <body>
+    <h1 id="title">O que tu pensa sobre o Davi?!</h1>
+    <p id="description"><em>É só uma página visual, então depois de preencher me manda um print >:D (ou marca no insta kk)</em></p>
+    <form id="survey-form">
+      <fieldset>
+            <fieldset id="intro">
+            <label id="name-label" for="name" class="introq"> Qual seu nome? <input type="text" id="name" required placeholder="fulanin"></input>
+            <label id="email-label" for="email" class="introq">Manda teu email? <input type="email" id="email" required placeholder="fulano@detal.com"></input></label>
+            <label id="number-label" for="number" class="introq">Faz quantos meses que (não) te conheço? <input type="number" id="number" min="0" max="270" placeholder="0-270"></input></label>
+            <label for="dropdown">Como classifica a nossa relação?
+                <select id="dropdown">
+                    <option value="">escolha um</option>
+                    <option value="1">Inimigo</option>
+                    <option value="2">Inimigo do meu inimigo</option>
+                    <option value="3">Meu amigãozão</option>
+                    <option value="4">Amor da minha vida</option>
+                    <option value="5">Não sei, muitas opções</option>
+                </select>
+            </label>
+            <hr>
+        </fieldset>
+        <fieldset id="fmf">
+          <legend>Já falou mal de mim?</legend>
+          <div class="opcoes">
+            <label for="fm-sim"><input id="fm-sim" type="radio" name="falar-mal">O tempo todo</input></label>
+            <label for="fm-nem"><input id="fm-nem" type="radio" name="falar-mal">Nem falo de tu kkk</input></label>
+            <label for="fm-nao"><input id="fm-nao" type="radio" name="falar-mal">Só falo bem</input></label>
+          </div>
+        </fieldset>
+        <fieldset id="adm">
+            <legend>O que acha de mim?</legend>
+            <div class="opcoes">
+              <label for="adm-gato"><input id="adm-gato" type="checkbox" value="1">Gato</input></label>
+              <label for="adm-chato"><input id="adm-chato" type="checkbox" value="2">Chato</input></label>
+              <label for="adm-mato"><input id="adm-mato" type="checkbox" value="3">Mato</input></label>
+              <label for="adm-bato"><input id="adm-bato" type="checkbox" value="4">Bato</input></label>
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset id="review">
+          <legend>Coisas que eu deveria melhorar</legend>
+          <textarea id="melhorar" rows="4" cols="50" placeholder="Eu acho que o davi não tem nada pra melhorar, o cara é incrível..."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Enviar (ainda não funciona kk)"></input>
+      </fieldset>
+    </form>
+  </body>
+</html>head>
+    <link rel="stylesheet" href="styles.css"></link>
+    
